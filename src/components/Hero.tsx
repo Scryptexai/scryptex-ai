@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import scryptexBot from "../assets/scryptex_ai_bot.png";
+import { Bot } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -21,11 +21,9 @@ export const Hero = () => {
           </div>
           <div className="flex-1 flex justify-center lg:justify-end fade-in">
             <div className="relative w-64 h-64 lg:w-[400px] lg:h-[400px] p-4">
-              <img
-                src={scryptexBot}
-                alt="Scryptex AI Assistant"
-                className="w-full h-full object-contain drop-shadow-xl"
-              />
+              <div className="w-full h-full rounded-full bg-blue-100 flex items-center justify-center">
+                <Bot className="w-3/5 h-3/5 text-primary" />
+              </div>
             </div>
           </div>
         </div>
