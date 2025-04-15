@@ -8,7 +8,7 @@ export const Hero = () => {
       
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Logo */}
-        <div className="flex justify-center lg:justify-start mb-4 my-0 px-0 mx-0 rounded-2xl">
+        <div className="<div class=\"flex justify-center lg:justify-start mb-4 my-0 px-0 mx-0\"> <img src=\"/logo.png\" alt=\"Scryptex Logo\" class=\"h-10 lg:h-12 w-auto\" /> </div> rounded">
           <img alt="Scryptex Logo" src="/lovable-uploads/c2a12393-c14b-4788-a246-66fb6812f0c5.jpg" className="h-12 md:h-16 object-fill" />
         </div>
         
