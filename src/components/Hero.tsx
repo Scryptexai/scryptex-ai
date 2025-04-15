@@ -1,11 +1,8 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Bot } from "lucide-react";
-
 export const Hero = () => {
-  return (
-    <section className="section-padding bg-gradient-to-b from-blue-50 to-white">
+  return <section className="section-padding bg-gradient-to-b from-blue-50 to-white">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
           <div className="flex-1 text-center lg:text-left">
@@ -20,7 +17,7 @@ export const Hero = () => {
             </Button>
           </div>
           <div className="flex-1 flex justify-center lg:justify-end fade-in">
-            <div className="relative w-64 h-64 lg:w-[400px] lg:h-[400px] p-4">
+            <div className="relative w-64 h-64 lg:w-[400px] lg:h-[400px] p-4 bg-gray-50 rounded-lg">
               <div className="w-full h-full rounded-full bg-blue-100 flex items-center justify-center">
                 <Bot className="w-3/5 h-3/5 text-primary" />
               </div>
@@ -28,6 +25,5 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
