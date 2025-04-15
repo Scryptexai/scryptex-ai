@@ -46,6 +46,10 @@
   animation: float 3s ease-in-out infinite;
 }
 
+.pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -67,4 +71,29 @@
   100% {
     transform: translateY(0px);
   }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Network lines animation */
+@keyframes flow {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.network-line {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: flow 10s linear infinite;
 }
