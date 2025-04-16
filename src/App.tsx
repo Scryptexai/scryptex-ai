@@ -5,6 +5,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import { ProjectSources } from "@/components/ProjectSources"; // Import baru
+import { SentimentSources } from "@/components/SentimentSources"; // Import baru
 
 const queryClient = new QueryClient();
 
@@ -19,6 +21,9 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        {/* Tambahkan komponen baru di sini */}
+        <ProjectSources />
+        <SentimentSources />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
