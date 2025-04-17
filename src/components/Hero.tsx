@@ -6,11 +6,9 @@ import { PhonePreview } from "./PhonePreview";
 export const Hero = () => {
   return (
     <section className="section-padding relative overflow-hidden bg-white">
-      {/* Background Section */}
       <NetworkBackground />
 
       <div className="max-w-7xl mx-auto relative z-10">
-        {/* Logo Section */}
         <div className="flex justify-center lg:justify-start mb-4">
           <img
             alt="Scryptex Logo"
@@ -19,9 +17,7 @@ export const Hero = () => {
           />
         </div>
 
-        {/* Hero Content */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-          {/* Text Content */}
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 fade-in">
               Discover Smarter Airdrops with AI
@@ -45,7 +41,6 @@ export const Hero = () => {
             </div>
           </div>
 
-          {/* Banner Image */}
           <div className="flex-1 flex justify-center lg:justify-end fade-in">
             <div className="relative w-full max-w-[400px]">
               <img
@@ -57,13 +52,11 @@ export const Hero = () => {
           </div>
         </div>
 
-        {/* Phone Preview Section */}
         <div className="mt-12 lg:mt-24">
           <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
             Experience Scryptex on Telegram
           </h2>
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-            {/* Text Content */}
             <div className="lg:w-1/2 text-center lg:text-left">
               <h3 className="text-xl md:text-2xl font-semibold mb-4">
                 AI-Powered Airdrop Research
@@ -100,7 +93,6 @@ export const Hero = () => {
               </div>
             </div>
 
-            {/* Phone Preview */}
             <div className="lg:w-1/2">
               <PhonePreview />
             </div>
