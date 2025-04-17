@@ -7,7 +7,6 @@ export const Hero = () => {
   return (
     <section className="section-padding relative overflow-hidden bg-white">
       <NetworkBackground />
-
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="flex justify-center lg:justify-start mb-4">
           <img
@@ -16,7 +15,6 @@ export const Hero = () => {
             className="h-20 lg:h-22 w-auto"
           />
         </div>
-
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 fade-in">
@@ -40,7 +38,6 @@ export const Hero = () => {
               </a>
             </div>
           </div>
-
           <div className="flex-1 flex justify-center lg:justify-end fade-in">
             <div className="relative w-full max-w-[400px]">
               <img
@@ -51,7 +48,6 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-
         <div className="mt-12 lg:mt-24">
           <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
             Experience Scryptex on Telegram
@@ -65,34 +61,19 @@ export const Hero = () => {
                 Access the power of AI research right from your Telegram app.
                 Analyze projects, track airdrops, and never miss an opportunity.
               </p>
-              <div className="flex flex-col space-y-4">
+              <ul className="space-y-4">
                 {[
                   "Instant analysis of project quality and airdrop potential",
                   "Track all your airdrops in one place with real-time updates",
                   "No more wasted time on low-quality projects",
-                ].map((text, i) => (
-                  <div key={i} className="flex items-start">
-                    <div className="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 flex items-center justify-center">
-                      <svg
-                        className="h-4 w-4 text-green-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                    </div>
-                    <p className="ml-3 text-sm text-gray-600">{text}</p>
-                  </div>
+                ].map((item, idx) => (
+                  <li key={idx} className="flex items-start text-gray-600">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>{item}</span>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
-
             <div className="lg:w-1/2">
               <PhonePreview />
             </div>
