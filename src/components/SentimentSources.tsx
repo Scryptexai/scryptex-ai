@@ -1,9 +1,8 @@
 export default function SentimentSources() {
   const logos = [
-    "x.png",
-    "reddit.png",
-    "discord.png",
-    "linkedin.png",
+    "twitter.png",
+    "Reddit.png",
+    "Linkedin.png",
     "lunarcrush.png",
     "theblock.png"
   ];
@@ -19,7 +18,9 @@ export default function SentimentSources() {
             key={idx}
             src={`/media/${logo}`}
             alt={logo.replace(".png", "")}
-            className="h-10 mx-auto object-contain"
+            className={`mx-auto object-contain ${
+              logo === "twitter.png" ? "w-12 h-12" : ""
+            }`}
           />
         ))}
       </div>

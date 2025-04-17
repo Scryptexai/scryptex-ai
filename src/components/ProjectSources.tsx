@@ -6,7 +6,6 @@ export default function ProjectSources() {
     "cryptorank.png",
     "dune.png",
     "nansen.png",
-    "investing.png",
     "cryptoquant.png"
   ];
 

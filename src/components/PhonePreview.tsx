@@ -158,3 +158,4 @@ export const PhonePreview = () => {
     </div>
   );
 };
+export default PhonePreview;
