@@ -14,4 +14,3 @@ export const Waitlist = () => {
       </div>
     </section>;
 };
-export default Waitlist;

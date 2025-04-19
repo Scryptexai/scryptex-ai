@@ -44,4 +44,3 @@ export const Problem = () => {
     </section>
   );
 };
-export default Problem;
