@@ -1,3 +1,4 @@
+
 export const Waitlist = () => {
   return <section className="section-padding text-white bg-gray-50">
       <div className="max-w-4xl mx-auto text-center">

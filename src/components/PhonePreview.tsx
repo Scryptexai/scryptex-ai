@@ -28,7 +28,7 @@ export const PhonePreview = () => {
           <div className="bg-[#3366FF] text-white p-3 flex items-center justify-between">
             <div className="flex items-center">
               <img 
-                src="/lovable-uploads/862e4806-f7e8-408a-aaec-acf47b417eab.png" 
+                src="/media/logo.png" 
                 alt="Scryptex Logo" 
                 className="w-6 h-6 mr-2"
               />
