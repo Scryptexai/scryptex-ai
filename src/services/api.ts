@@ -2,7 +2,7 @@ import { toast } from "@/hooks/use-toast";
 import axios from "axios"; // Pastikan axios sudah diimpor
 
 // Constants
-const BASE_URL = import.meta.env.VITE_API_URL || "scryptex-backend-production.up.railway.app";
+const BASE_URL = import.meta.env.VITE_API_URL || "scryptex-backend-production.up.railway.app/api";
 
 // Types
 export interface User {
