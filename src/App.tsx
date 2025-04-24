@@ -10,7 +10,7 @@ import { LandingLayout } from "@/layouts/LandingLayout";
 import { DashboardLayout } from "@/layouts/DashboardLayout";
 
 // Landing Pages
-import LandingPage from "./pages/index"; // Fixed casing
+import LandingPage from "./pages/home"; // Fixed casing
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import NotFound from "./pages/NotFound";
