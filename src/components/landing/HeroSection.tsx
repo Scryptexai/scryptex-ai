@@ -1,9 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"; // Import useNavigate untuk navigasi
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const HeroSection = () => {
+  const navigate = useNavigate(); // Hook untuk navigasi
+
+  // Fungsi untuk scroll ke elemen dengan ID tertentu
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
     section?.scrollIntoView({ behavior: "smooth" });
@@ -65,15 +68,17 @@ export const HeroSection = () => {
             Scryptex is your ultimate Web3 AI agent that finds, analyzes, and filters legit airdrop & crypto projects — so you don't waste time on scams or noise.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
+            {/* Tombol Join Waitlist */}
             <Button
-              onClick={() => scrollToSection("waitlist")}
+              onClick={() => scrollToSection("waitlist")} // Scroll ke bagian waitlist
               className="bg-scryptex-blue hover:bg-scryptex-dark text-white font-medium rounded-lg px-6 py-3 flex items-center"
             >
               Join Waitlist
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
+            {/* Tombol Explore */}
             <Button
-              onClick={() => scrollToSection("explore")}
+              onClick={() => navigate("/explore")} // Navigasi ke halaman explore
               variant="outline"
               className="border border-gray-300 hover:bg-gray-50 rounded-lg px-6 py-3 flex items-center"
             >
