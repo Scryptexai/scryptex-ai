@@ -70,7 +70,7 @@ export const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             {/* Tombol Join Waitlist */}
             <Button
-              onClick={() => scrollToSection("waitlist")} // Scroll ke bagian waitlist
+              onClick={() => scrollToSection("WaitlistCTA")} // Scroll ke bagian waitlist
               className="bg-scryptex-blue hover:bg-scryptex-dark text-white font-medium rounded-lg px-6 py-3 flex items-center"
             >
               Join Waitlist
