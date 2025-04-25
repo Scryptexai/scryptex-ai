@@ -10,9 +10,6 @@ lerna-debug.log*
 # Node modules
 node_modules/
 
-# Environment files
-.env
-
 # Python virtual environment
 venv/
 
@@ -32,10 +29,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# .env
-.env
-**/.env
-
 # Python
 __pycache__/
 *.pyc
@@ -47,4 +40,4 @@ node_modules/
 # VSCode
 .vscode/
 
-.env
+
