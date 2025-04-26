@@ -38,7 +38,10 @@ export function WaitlistCTA() {
   };
 
   return (
-    <div className="p-6 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-xl shadow-md w-full max-w-xl mx-auto mt-10 text-center">
+    <div
+      id="waitlist" // Tambahkan ID untuk memungkinkan scroll ke elemen ini
+      className="p-6 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-xl shadow-md w-full max-w-xl mx-auto mt-10 text-center"
+    >
       {!joined ? (
         <>
           <h2 className="text-3xl font-bold mb-4">Join the Waitlist</h2>
