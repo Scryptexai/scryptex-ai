@@ -12,7 +12,7 @@ Create a **complete DeFi platform** for SCRYPTEX with full functionality:
 
 ### **Smart Contract Structure:**
 ```
-contracts/
+scryptex-backend/contracts/
 ├── core/
 │   ├── ScryptexBridge.sol           # Cross-chain bridge
 │   ├── ScryptexDEX.sol             # DEX with AMM
